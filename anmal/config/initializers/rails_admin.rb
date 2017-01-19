@@ -8,6 +8,21 @@ RailsAdmin.config do |config|
    end
    config.current_user_method(&:current_user)
 
+   config.model Article do
+    edit do
+      field :title
+      # For RailsAdmin >= 0.5.0
+      field :body, :wysihtml5 do
+  	config_options toolbar: { fa: true }, # use font-awesome instead of glyphicon
+                 html: true, # enables html editor
+                 parserRules: { tags: { p:1 } } # support for <p> in html mode
+      end
+      field :published_at
+      field :author   
+    end
+   end
+
+
   ## == Cancan ==
   # config.authorize_with :cancan
 
@@ -30,7 +45,7 @@ RailsAdmin.config do |config|
     export
     bulk_delete
     show
-    edit
+    edit 
     delete
     show_in_app
 
