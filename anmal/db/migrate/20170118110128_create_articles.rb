@@ -2,9 +2,9 @@ class CreateArticles < ActiveRecord::Migration[5.0]
   def change
     create_table :articles do |t|
       t.string :title
-      t.string :bodyi
+      t.text :body
       t.datetime :published_at
-      t.belongs_to :authors, index: true
+      t.belongs_to :author, index: true
 
       t.timestamps
     end
