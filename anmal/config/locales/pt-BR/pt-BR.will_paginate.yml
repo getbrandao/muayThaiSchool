@@ -1,0 +1,53 @@
+# encoding: UTF-8
+pt-BR:
+  will_paginate:
+    previous_label: "&#8592; Anterior"
+    next_label: "Próximo &#8594;"
+    page_gap: "&hellip;"
+    models:
+      color/color:
+        zero: Cor
+        one: Cor
+        other: Cores
+    models:
+      customer/customer:
+        zero: Cliente
+        one: Cliente
+        other: Clientes
+
+    page_entries_info:
+      single_page:
+        zero:  "Nenhum(a) %{model} encontrado(a)"
+        one:   "Mostrando 1 %{model}"
+        other: "Mostrando todos(as) %{count} %{model}"
+      single_page_html:
+        zero:  "Nenhum(a) %{model} encontrado(a)"
+        one:   "Mostrando <b>1</b> %{model}"
+        other: "Mostrando <b>todos(as)&nbsp;%{count}</b> %{model}"
+
+      multi_page: "Mostrando %{model} %{from} - %{to} de %{count} no total"
+      multi_page_html: "Mostrando %{model} <strong>%{from}&nbsp;-&nbsp;%{to}</strong> de <strong>%{count}</strong> no total"
+
+    dashboard/problema_encontrado:
+      page_entries_info:
+        single_page:
+          zero:  "Não foi encontrado nenhum problema"
+          one:   "Mostrando 1 problema encontrado"
+          other: "Mostrando %{count} problemas encontrados"
+        multi_page: "Mostrando %{from} - %{to} de %{count} problemas encontrados no total"
+        single_page_html:
+          zero:  "Nenhum(a) problema encotrado(a)"
+          one:   "Mostrando <b>1</b> problema encontrado"
+          other: "Mostrando <b>todos&nbsp;%{count}</b> problemas encontrados"
+
+    preenchimento/fvs_preenchimento:
+      page_entries_info:
+        single_page:
+          zero:  "Não foi encontrado nenhum serviço executado"
+          one:   "Mostrando 1 serviço executado"
+          other: "Mostrando %{count} serviços executados"
+        multi_page: "Mostrando %{from} - %{to} de %{count} serviços executados no total"
+        single_page_html:
+          zero:  "Nenhum(a) serviços executados"
+          one:   "Mostrando <b>1</b> serviços executados"
+          other: "Mostrando <b>todos&nbsp;%{count}</b> serviços executados"
