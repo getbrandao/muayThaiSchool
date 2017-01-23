@@ -1,0 +1,33 @@
+pt-BR:
+  flash:
+    actions:
+      create:
+        notice: '%{resource_name} foi criado(a) com sucesso.'
+        alert: '%{resource_name} não pôde ser criado(a).'
+      update:
+        notice: '%{resource_name} foi atualizado(a) com sucesso.'
+        alert: '%{resource_name} não pôde ser atualizado(a).'
+      destroy:
+        notice: '%{resource_name} foi excluído(a) com sucesso.'
+        alert: '%{resource_name} não pôde ser excluído(a).'
+    atividades:
+      create:
+        alert: '%{error_message}'
+      destroy:
+        alert: '%{error_message}'
+    empresas:
+      create:
+        alert: '%{error_message}'
+    documents:
+      create:
+        storage_error: 'Esse arquivo excede seu espaço total de armazenamento'
+    manager:
+      create_data_permission:
+        notice: 'Arquivo compatilhado com sucesso.'
+        alert: 'Arquivo não pôde ser compatilhado.'
+      destroy_data_permission:
+        notice: 'Permissão removida com sucesso.'
+        alert: 'Permissão não pôde ser removida.'
+
+    reports/traceabilities:
+      alert: 'Não foi possível gerar o PDF'

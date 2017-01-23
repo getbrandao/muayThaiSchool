@@ -1,0 +1,26 @@
+pt-BR:
+  activerecord:
+    models:
+      article: "Artigo"
+      author: "Autor"
+      user: "Usuários"
+
+  attributes:
+        name: "Nome"
+        password: "Senha"
+        password_confirmation: "Confirmar senha"
+        reset_password_sent_at: "Senha reiniciada"
+        remember_created_at: "Lembrar-me configurado"
+        sign_in_count: "Número de login"
+        current_sign_in_at: "Login atual"
+        last_sign_in_at: "Último login"
+        current_sign_in_ip: "IP atual"
+        last_sign_in_ip: "Último IP"
+        email: "Email"
+        title: "Título"
+        body: "Conteúdo"
+        published_at: "Publicado"
+        author: "Autor"
+        image: "Imagem"
+        created_at: "Criado"
+        updated_at: "Atualizado"

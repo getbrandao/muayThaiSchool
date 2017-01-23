@@ -1,5 +1,5 @@
 RailsAdmin.config do |config|
-
+  config.main_app_name = ["ANMAL", "-  Administração"]
   ### Popular gems integration
 
   ## == Devise ==
@@ -17,6 +17,7 @@ RailsAdmin.config do |config|
                  html: true, # enables html editor
                  parserRules: { tags: { p:1 } } # support for <p> in html mode
       end
+      field :image, :carrierwave
       field :published_at
       field :author   
     end
