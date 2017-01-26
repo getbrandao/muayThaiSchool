@@ -416,6 +416,7 @@ DEPENDENCIES
   guard-bundler
   guard-rails
   guard-rspec
+  haml (~> 4.0, >= 4.0.7)
   headless
   hub
   jbuilder (~> 2.5)
