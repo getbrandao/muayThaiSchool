@@ -26,16 +26,17 @@ pt-BR:
       new: Novo Cadastro
     form:
       placeholders:
-        search: 'Pesquisar...' 
+        search: 'Pesquisar...'
     modal:
       confirm: "Você tem certeza?"
     links:
-      cars: 'Veículos'
+      home: 'Home'
       dashboard: 'Dashboard'
-      operations: 'Operações'
-      management: 'Gerenciamento'
+      about: 'Sobre'
+      gallery: 'Galeria'
       exit: 'Sair'
-      profile: 'Perfil'
-      customers: 'Clientes'
+      contact: 'Contato'
+      management: 'Gerenciamento'
+    buttons:
+      read_more: 'Leia mais'
     attributes:
-      colors: 'Cores'
