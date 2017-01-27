@@ -1,0 +1,8 @@
+%div
+
+  -if notice
+    :javascript
+      Materialize.toast('#{notice}', 4000)
+  -if alert
+    :javascript
+      Materialize.toast('#{alert}', 4000)
