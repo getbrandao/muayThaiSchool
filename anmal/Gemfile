@@ -19,7 +19,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'materialize-sass'
 gem 'simple_form'
 gem "ransack", github:"activerecord-hackery/ransack", branch:"master"
-gem 'kaminari'
+gem 'will_paginate'
 gem 'brazilian-rails'
 gem 'breadcrumbs_on_rails'
 gem 'jquery-turbolinks'
