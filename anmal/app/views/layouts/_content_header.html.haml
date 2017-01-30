@@ -1,0 +1,13 @@
+%header
+ %div{:class => "col s12 m3 l4"}
+  = select_tag :per_page, options_for_select([10,20,50], params[:per_page].to_i),
+       :onchange => "if(this.value){window.location='?per_page='+this.value;}", class: "search-select"
+  %label{:for => "amount"}
+   Registros por página
+ %div{:class => "col s12 m3 l3"}
+ %div{:class => "col s12 m6 l5"}
+  = search_form_for @query, url: home_index_path, method: :get do |f|
+   = content_tag :div, class: '' do
+    = f.search_field :title, label: false, placeholder: t('form.search_field'), class: 'search-form', type: 'text'
+    = button_tag( class: 'btn-flat search-button') do
+     %i{:class => "fa fa-search"}

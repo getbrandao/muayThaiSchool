@@ -1,14 +1,17 @@
+%div.row.search-bar
+ = render 'layouts/content_header'
 %div.row
  - @articles.each do |article|
   %div{:class => "col s12 m10 l6"}
    %div.card.hoverable
     %div.card-image
      %p= image_tag article.image, class: "responsive-img"
-     %h4= link_to article.title, home_path(article), class: "card-title "
+     %div.card-title.card-title-text
+      %span= link_to article.title, home_path(article), class: "white-text"
     %div.card-content
      %p
       %i.card-at-time
        %small= time_ago_in_words(article.created_at)
-     %p= truncate(article.body.html_safe, length: 100)
+     %p= truncate(article.body, length: 60, omission: "" , escape: false)
     %div.card-action.right-align
      = link_to "Leia mais", home_path(article)
