@@ -1,17 +1,20 @@
 %div.row.search-bar
  = render 'layouts/content_header'
 %div.row
- - @articles.each do |article|
-  %div{:class => "col s12 m10 l6"}
+ %div{:class => "col s8 m9 l9 cards"}
+  - @articles.each do |article|
    %div.card.hoverable
     %div.card-image
-     %p= image_tag article.image, class: "responsive-img"
-     %div.card-title.card-title-text
-      %span= link_to article.title, home_path(article), class: "white-text"
+     = image_tag article.image, class: "materialboxed"
+     = link_to home_path(article), class: "btn-floating btn-large halfway-fab waves-effect waves-light" do
+      %i.material-icons add
     %div.card-content
+     %div.card-title
+      %span= article.title
      %p
       %i.card-at-time
        %small= time_ago_in_words(article.created_at)
      %p= truncate(article.body, length: 60, omission: "" , escape: false)
     %div.card-action.right-align
-     = link_to "Leia mais", home_path(article)
+     %span.card-author
+      %i= article.author.name
