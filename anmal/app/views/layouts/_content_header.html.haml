@@ -6,8 +6,8 @@
    Registros por página
  %div{:class => "col s12 m3 l3"}
  %div{:class => "col s12 m6 l5"}
-  = search_form_for @query, url: home_index_path, method: :get do |f|
+  = search_form_for @query, url: articles_path, method: :get do |f|
    = content_tag :div, class: '' do
-    = f.search_field :title, label: false, placeholder: t('form.search_field'), class: 'search-form', type: 'text'
-    = button_tag( class: 'btn-flat search-button') do
+    = f.search_field :body_cont, label: false, placeholder: t('form.search_field'), class: 'search-form', type: 'text'
+    = button_tag( class: 'btn-flat search-button black-text') do
      %i{:class => "fa fa-search"}
