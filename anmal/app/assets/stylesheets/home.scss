@@ -1,12 +1,31 @@
 // Place all the styles related to the Home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.navbar {
+  padding-left: 250px;
+  background-color: #d50000;
+  height: 55px;
+  line-height: 55px;
+}
+
 .side-nav{
   width: 250px;
+  background-color: #01579b;
 }
 
 .side-nav-bg {
-  height: 167px;
+  height: 90%;
+  width: 90%;
+  left: 10px !important;
+}
+
+.side-nav-brand {
+  margin-top: 35%;
+}
+
+.side-nav-links {
+  margin-top: 77% !important;
 }
 
 .container{
@@ -60,6 +79,12 @@
   text-align: center;
   color: #fff;
   line-height: 40px;
+}
+
+.btn-flat {
+  color: white;
+  border-radius: 5px;
+  border: 1px solid white;
 }
 
 .card-content {

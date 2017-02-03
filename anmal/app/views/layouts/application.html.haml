@@ -11,9 +11,9 @@
   = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
 
   %body
+   = render partial: 'layouts/navbar'
    = render partial: 'layouts/sidenav'
    %div
-    <!--<%= render partial: 'partials/navbar' %>-->
     %main.container
      = render 'layouts/flash_message'
      = yield

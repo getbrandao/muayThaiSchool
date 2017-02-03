@@ -2,26 +2,20 @@
  %div{:class => "col s12 m4 l2"}
   %div#sidenav
    %ul{:id => "slide-out", :class => "side-nav fixed"}
-    %li.side-nav-bg
-     %div{:class => "userView center"}
-      %img{:class => "background responsive-img", :src => "/assets/alagoas.jpg"}
-
-    %li
-     %div
-      = link_to t('application.links.home'), root_path
-
-    %li
-     %div
-      = link_to t('application.links.about'), root_path
-
-    %li
-     %div
-      = link_to t('application.links.gallery'), root_path
-
-    %li
-     %div
-      = link_to t('application.links.contact'), root_path
-
-    %li
-     %div
-      = link_to t('application.links.management'), '/admin'
+    %div.side-nav-brand
+     %li
+      %div{:class => "userView center"}
+       %img{:class => "background responsive-img side-nav-bg", :src => "/assets/anmal.png"}
+    %div.right-align.side-nav-links
+     %li
+      %div
+       = link_to t('application.links.home'), root_path, class: "white-text"
+     %li
+      %div
+       = link_to t('application.links.about'), root_path, class: "white-text"
+     %li
+      %div
+       = link_to t('application.links.gallery'), root_path, class: "white-text"
+     %li
+      %div
+       = link_to t('application.links.contact'), root_path, class: "white-text"
