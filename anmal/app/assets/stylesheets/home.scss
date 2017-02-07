@@ -39,8 +39,16 @@
 .card-title {
   border-bottom: 1px solid #bdbdbd;
   width: 100%;
-  padding: 0 !important;
+  //padding: 0 !important;
   font-weight: 400 !important;
+}
+
+.card-title-ads {
+  border: none;
+  padding: 10px !important;
+  font-weight: bold !important;
+  color: #333 !important;
+  font-size: 1.1em !important;
 }
 
 .card-at-time{
