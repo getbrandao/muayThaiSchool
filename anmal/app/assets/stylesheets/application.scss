@@ -1,36 +1,45 @@
 @import "materialize";
 @import "materialize/extras/nouislider";
 @import "font-awesome/css/font-awesome.min.css";
-@import "home";
+@import "articles";
 
-main, footer {
-  padding-left: 250px;
-}
-
-@media only screen and (max-width : 992px) {
-  header, main, footer {
-        padding-left: 0;
-  }
+// Only necessary for window height sized blocks.
+html, body, .block {
+  height: 100%;
 }
 
 body {
   background-color: #f1f1f1;
 }
 
-.login-row{
-  margin-top: 12%;
-}
-
-.login-box{
-  border: 2px solid #eee;
-  border-radius: 5px; padding: 1em;
-}
-
-.btn{
-  padding: 1px 8px 8px 8px;
-  background-color: #d50000;
-}
-
-.btn:hover {
-  background-color: #01579b;
-}
+// main, footer {
+//   padding-left: 250px;
+// }
+//
+// @media only screen and (max-width : 992px) {
+//   header, main, footer {
+//         padding-left: 0;
+//   }
+// }
+//
+// body {
+//   background-color: #f1f1f1;
+// }
+//
+// .login-row{
+//   margin-top: 12%;
+// }
+//
+// .login-box{
+//   border: 2px solid #eee;
+//   border-radius: 5px; padding: 1em;
+// }
+//
+// .btn{
+//   padding: 1px 8px 8px 8px;
+//   background-color: #d50000;
+// }
+//
+// .btn:hover {
+//   background-color: #01579b;
+// }
