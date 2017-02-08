@@ -1,34 +1,89 @@
-%div.row.search-bar
- = render 'layouts/content_header'
-%div.row
- %div{:class => "col s8 m9 l9 cards"}
-  - @articles.each do |article|
-   %div.card.hoverable
-    %div.card-image
-     = image_tag article.image, class: "materialboxed"
-     = link_to article_path(article), class: "btn-floating btn-large halfway-fab waves-effect waves-light" do
-      %i.material-icons add
-    %div.card-content
-     %div.card-title
-      %span= article.title
-     %p
-      %i.card-at-time
-       %small= time_ago_in_words(article.created_at)
-     %p= truncate(article.body, length: 60, omission: "" , escape: false)
-    %div.card-action.right-align
-     %span.card-author
-      %i por #{article.author.name}
- %div{:class => "col s4 m3 l3 offset-s8 offset-m9 offset-l9 center-align"}
-  %div.card
-   %div.card-title.card-title-ads
-    %span Polícia Militar
-   %div.card-content
-    = link_to "http://www.pmal.al.gov.br" do
-     = image_tag "pmal.png", class: "responsive-img"
+%div#home.block
+ %nav.pushpin-demo-nav{ data: {target: "home"}}
+  %div.nav-wrapper.light-blue
+   %div.container
+    %ul#nav-mobile.right
+     %li
+      %a{href: "#articles"} Artigos
+     %li
+      %a{href: "#about"} Sobre
+     %li
+      %a{href: "#contact"} Contato
+     %li
+      %a{href: "/admin"} Admin
 
- %div{:class => "col s4 m3 l3 offset-s8 offset-m9 offset-l9 center-align"}
-  %div.card
-   %div.card-title.card-title-ads
-    %span PROPAGANDA 01
-   %div.card-content
-    %span TESTESTETETETE
+ %div.slider
+  %ul.slides
+   %li
+    = image_tag "anmal01.jpg", class: "responsive-img"
+    %div.caption.center-align
+     %div.anmal-logo
+      = image_tag "anmal.png", class: ""
+   %li
+    = image_tag "muay01.png", class: "responsive-img"
+    %div.caption.center-align
+     %div.anmal-logo
+      = image_tag "anmal.png", class: ""
+   %li
+    = image_tag "anmal02.jpg", class: "responsive-img"
+    %div.caption.center-align
+     %div.anmal-logo
+      = image_tag "anmal.png", class: ""
+
+%div#articles.block.red
+ %nav.pushpin-demo-nav{ data: {target: "articles"}}
+  %div.nav-wrapper.red
+   %div.container
+    %a{href: "#", class: "brand-logo"}
+     Red
+     %ul#nav-mobile.right
+      %li
+       %a{href: "#!"} Blue Link 1
+ %div.container
+  %div.row.search-bar
+   = render 'layouts/content_header'
+  %div.row
+   %div{:class => "col s8 m9 l9 cards"}
+    - @articles.each do |article|
+     %div.card.hoverable
+      %div.card-image
+       = image_tag article.image, class: "materialboxed"
+       = link_to article_path(article), class: "btn-floating btn-large halfway-fab waves-effect waves-light" do
+        %i.material-icons add
+      %div.card-content
+       %div.card-title
+        %span= article.title
+       %p
+        %i.card-at-time
+         %small= time_ago_in_words(article.created_at)
+       %p= truncate(article.body, length: 60, omission: "" , escape: false)
+      %div.card-action.right-align
+       %span.card-author
+        %i por #{article.author.name}
+   %div{:class => "col s4 m3 l3 offset-s8 offset-m9 offset-l9 center-align"}
+    %div.card
+     %div.card-title.card-title-ads
+      %span Polícia Militar
+     %div.card-content
+      = link_to "http://www.pmal.al.gov.br" do
+       = image_tag "pmal.png", class: "responsive-img"
+
+%div#about.block.green
+ %nav.pushpin-demo-nav{ data: {target: "about"}}
+  %div.nav-wrapper.green
+   %div.container
+    %a{href: "#", class: "brand-logo"}
+     Green
+     %ul#nav-mobile.right
+      %li
+       %a{href: "#!"} Blue Link 1
+
+%div#contact.block.yellow
+ %nav.pushpin-demo-nav{ data: {target: "contact"}}
+  %div.nav-wrapper.yellow
+   %div.container
+    %a{href: "#", class: "brand-logo"}
+     Green
+     %ul#nav-mobile.right
+      %li
+       %a{href: "#!"} Blue Link 1
